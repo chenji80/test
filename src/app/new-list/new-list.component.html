@@ -1,0 +1,12 @@
+
+<div class="itemlist">
+    <a href="{{datalist.link}}">
+        <!-- <img  alt="" src="{{datalist.picInfo.length>0 ? datalist.picInfo[0].url : ''}}"  class="pic"> -->
+        <img [defaultImage]="defaultImage" [lazyLoad]="image" [offset]="offset" class="pic">
+        <div >
+            <h4>{{datalist.title}}</h4>
+            <div style="font-size: 14px;"><span style="float: right;">观看：{{datalist.tcount}}</span> <span class="label">{{datalist.category}}</span></div>
+        </div>
+    </a>
+</div>
+

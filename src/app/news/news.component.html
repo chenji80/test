@@ -1,0 +1,13 @@
+
+<h3>新闻列表 <span style="float: right;font-size: 12px;line-height: 30px;color: #999;">共有{{datas.length}}条</span></h3>
+<div>
+    <a class="weui-btn weui-btn_mini weui-btn_plain-default" (click)="sortNews()">排序</a>
+</div>
+<!-- <div>{{datas | json}}</div> -->
+<ul>
+  <li *ngFor = "let r of datas">
+    <app-new-list [datalist] = "r"></app-new-list>
+  </li>
+</ul>
+
+
